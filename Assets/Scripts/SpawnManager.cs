@@ -4,19 +4,36 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _agent;
-    private Transform _startPoint;
-    private Transform _endPoint;
-    void Start()
+    public static SpawnManager Instance { get; private set; }//to make this class as singleton
+    private void Awake()
     {
-        _startPoint = GameObject.FindGameObjectWithTag("StartPoint").transform;
-        _endPoint = GameObject.FindGameObjectWithTag("EndPoint").transform;
-        Instantiate(_agent, _startPoint.transform.position, Quaternion.identity);
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject); // prevent duplicates for example from previous scene load
+            return;
+        }
+        Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private float _spawnInterval = 2f;
+    [SerializeField] private GameObject _agentPrefab;
+    [SerializeField] private Transform _startPoint;
+    [SerializeField] private Transform _endPoint;
+    [SerializeField] private List<Transform> _barriers;
+    
+
+    public List<Transform> GetBarriers()
     {
-        
+        return _barriers;
+    }    
+
+    void Start()
+    {
+        InvokeRepeating(nameof(SpawnAgent), 0f, _spawnInterval);
+    }
+
+    private void SpawnAgent()
+    {
+        Instantiate(_agentPrefab, _startPoint.transform.position, Quaternion.identity);
     }
 }

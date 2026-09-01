@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2058598079906794432}
   - component: {fileID: 2058598079906794433}
   m_Layer: 0
-  m_Name: EndPoint
-  m_TagString: EndPoint
+  m_Name: BarrierPoint
+  m_TagString: BarrierPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
