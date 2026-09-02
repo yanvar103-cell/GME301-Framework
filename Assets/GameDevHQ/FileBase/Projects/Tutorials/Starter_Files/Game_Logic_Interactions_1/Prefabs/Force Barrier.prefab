@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5763185769534635207}
   - component: {fileID: 3536736709525093728}
   - component: {fileID: 1956341747278713171}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Force Barrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}

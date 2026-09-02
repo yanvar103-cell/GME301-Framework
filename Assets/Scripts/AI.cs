@@ -19,30 +19,35 @@ public class AI : MonoBehaviour
     [SerializeField] private AIStates _currentState;
 
     private List<Transform> _barriers;
-    private Transform _currentBarrier;
+    [SerializeField] private Transform _currentBarrier;
+    [SerializeField] private int _hideLimit = 5;
+    private int _hideCount = 0;
 
-    [SerializeField] private float _minHideTime = 1f;
-    [SerializeField] private float _maxHideTime = 3f;
+    [SerializeField] private float _minHideTime = 3f;
+    [SerializeField] private float _maxHideTime = 6f;
     [SerializeField] private int _pointsAward = 50;
     private bool _isDead = false;
 
-    void Start()
+    private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
         _anim = GetComponent<Animator>();
-        _barriers = SpawnManager.Instance.GetBarriers();
+    }
 
+    void Start()
+    {
+        _barriers = SpawnManager.Instance.GetBarriers();
         _startPoint = GameObject.FindGameObjectWithTag("StartPoint").transform;
         _endPoint = GameObject.FindGameObjectWithTag("EndPoint").transform;
+    }
+
+    private void OnEnable()
+    {
+        if (_endPoint == null) return; //for safety because after awake _endPoint is still null(Start() hasn't run yet!) 
 
         _currentState = AIStates.Run;
-
-        
-        if(_agent != null)
-        {
-            _agent.destination = _startPoint.position;
-            //Debug.Log("Distance to StartPoint: " + _agent.remainingDistance);
-        }
+        _agent.isStopped = false;
+        PickNewBarrier();
     }
 
     // Update is called once per frame
@@ -50,34 +55,42 @@ public class AI : MonoBehaviour
     {
         if (_isDead) return; // stop all logic once dead
 
+        if (_anim != null)
+            _anim.SetFloat("Speed", _agent.velocity.magnitude);
+
         switch (_currentState)
         {
             case AIStates.Run:
-                Debug.Log("Running");
+                //Debug.Log("Running");
                 RunState();
                 break;
             case AIStates.Hide:
-                Debug.Log("Hiding");
+                //Debug.Log("Hiding");
                 break;
             case AIStates.Death:
-                Debug.Log("Dying");
+                //Debug.Log("Dying");
                 break;
         }
-        
     }
 
     private void RunState()
     {
-        if (_agent.remainingDistance <= 0.1)
+        if (!_agent.pathPending && _agent.remainingDistance <= 0.1f)
         {
-            if(_currentBarrier != null)
+            if (_currentBarrier != null)
             {
                 _currentState = AIStates.Hide;
+                _anim.SetBool("Hiding", true);
                 StartCoroutine(HideRoutine());
             }
-            _agent.SetDestination(_endPoint.position);
-            Debug.Log("Distance to EndPoint: " + _agent.remainingDistance);
+            else ReachedEndPoint();
         }
+    }
+
+    private void ReachedEndPoint()
+    {
+        Debug.Log("Reached End Point!");
+        Invoke(nameof(ReturnToPool), 0f);//return to pool immediately without delay
     }
 
     IEnumerator HideRoutine()
@@ -85,19 +98,25 @@ public class AI : MonoBehaviour
         float _hideTime = Random.Range(_minHideTime, _maxHideTime);
         yield return new WaitForSeconds(_hideTime);
         if (_isDead) yield break;//don't wait if dead
+        _anim.SetBool("Hiding", false);
         _currentState = AIStates.Run;
         PickNewBarrier();
     }
 
     private void PickNewBarrier()
     {
-        if(_barriers.Count == 0) // no barriers left, just head to end point
+        List<Transform> _validBarriers = GetBarriersAhead();
+        
+        if(_hideCount >= _hideLimit || _validBarriers.Count == 0) // no barriers left, just head to end point
         {
             _currentBarrier = null;
             _agent.SetDestination(_endPoint.position);
+            return;
         }
-        int _randomIndex = Random.Range(0, _barriers.Count);
-        _agent.SetDestination(_barriers[_randomIndex].position);
+        int _randomIndex = Random.Range(0, _validBarriers.Count);
+        _currentBarrier = _validBarriers[_randomIndex];
+        _agent.SetDestination(_currentBarrier.position);
+        _hideCount++;
     }
 
     public void Death()
@@ -111,6 +130,44 @@ public class AI : MonoBehaviour
         //add score in ScoreManager
         ScoreManager.Instance.AddScore(_pointsAward);
 
-        Destroy(gameObject, 2f);//give 2 sec to finish death animation
+        //Destroy(gameObject, 2f);//give 2 sec to finish death animation
+        Invoke(nameof(ReturnToPool), 2f); //2sec to death anim, then deactivate instead of destroying
     }
+
+    void ReturnToPool()
+    {
+        _agent.isStopped = true;
+        gameObject.SetActive(false); //returns to pool, ready to be reused
+        //reset states for next use
+        _isDead = false;
+        _currentState = AIStates.Run;
+        _hideCount = 0;
+        _currentBarrier = null;
+    }
+
+    private List<Transform> GetBarriersAhead()
+    {
+        List<Transform> _ahead = new List<Transform>();
+        float _distanceToEnd = GetPathDistance(transform.position, _endPoint.position);
+        foreach(Transform _barrier in _barriers)
+        {
+            float _barrierDistanceToEnd = GetPathDistance(_barrier.position, _endPoint.position);
+            if (_barrierDistanceToEnd < _distanceToEnd) _ahead.Add(_barrier);
+        }
+        return _ahead;
+    }
+
+    private float GetPathDistance(Vector3 _from, Vector4 _to)
+    {
+        NavMeshPath _path = new NavMeshPath();
+        NavMesh.CalculatePath(_from, _to, NavMesh.AllAreas, _path);
+        
+        float _distance = 0f;
+        for(int i = 0; i < _path.corners.Length -1; i++)
+        {
+            _distance += Vector3.Distance(_path.corners[i], _path.corners[i + 1]);
+        }
+        return _distance;
+    }
+
 }
