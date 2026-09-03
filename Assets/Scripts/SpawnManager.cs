@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -31,7 +32,9 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-        for(int i = 0; i < _poolSize; i++)
+        AI.ClearOccupiedBarriers(); //reset shared state before anything spawns
+
+        for (int i = 0; i < _poolSize; i++)
         {
             GameObject _agent = Instantiate(_agentPrefab);
             _agent.SetActive(false); //start inactive, sitting in the pool
@@ -44,11 +47,13 @@ public class SpawnManager : MonoBehaviour
     private void SpawnAgent()
     {
         //Instantiate(_agentPrefab, _startPoint.transform.position, Quaternion.identity);
-        GameObject _agent = GetAgentFromPool();
-        if(_agent != null)
+        GameObject _agentObj = GetAgentFromPool();
+        if(_agentObj != null)
         {
-            _agent.transform.position = _startPoint.position;//place it to start
-            _agent.SetActive(true);//activate existing inactive agent instead of Instantiate new
+            _agentObj.SetActive(true); //activate existing inactive agent instead of Instantiate new
+            NavMeshAgent _agent = _agentObj.GetComponent<NavMeshAgent>();
+            _agent.Warp(_startPoint.position);//place it to start, warp properly syncs agent to the NavMesh
+            _agentObj.GetComponent<AI>().Spawn();
         }
     }
 
