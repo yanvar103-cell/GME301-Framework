@@ -61,9 +61,8 @@ public class AI : MonoBehaviour
         _agent.isStopped = false;
         PickNewBarrier();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    void Update()// Update is called once per frame
     {
         if (_isDead) return; // stop all logic once dead
 
@@ -102,6 +101,7 @@ public class AI : MonoBehaviour
     private void ReachedEndPoint()
     {
         Debug.Log($"[{GetInstanceID()}] Reached End Point! Position: {transform.position}, EndPoint: {_endPoint.position}, Distance: {Vector3.Distance(transform.position, _endPoint.position)}, HideCount was: {_hideCount}");
+        AudioManager.Instance.PlayAICompletedTrack();
         Invoke(nameof(ReturnToPool), 0f);//return to pool immediately without delay
     }
 
@@ -145,6 +145,8 @@ public class AI : MonoBehaviour
         ReleaseCurrentBarrier(); //free it up for other agents immediately on death
 
         if (_anim != null) _anim.SetTrigger("Death");
+        AudioManager.Instance.PlayAIDeath();
+        GameManager.Instance.RegisterKill();
         //add score in ScoreManager
         ScoreManager.Instance.AddScore(_pointsAward);
 

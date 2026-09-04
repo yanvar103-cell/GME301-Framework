@@ -11,12 +11,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Shootable
+  - AI
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Barrier
+  - Wall
+  - Explosive
   - 
   - 
   - 

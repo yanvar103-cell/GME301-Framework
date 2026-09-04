@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _ammoValueText;
 
     [Header("Timer Settings")]
-    [SerializeField] private float _matchDuration = 120f; //seconds, adjust to round length
+    [SerializeField] private float _matchDuration = 30f; //seconds, adjust to round length
     private float _timeRemaining;
     private bool _timerRunning = false;
 
@@ -42,9 +42,10 @@ public class UIManager : MonoBehaviour
         _timeRemaining -= Time.deltaTime;
         if (_timeRemaining <= 0f)
         {
+            //game-over logic here
             _timeRemaining = 0f;
             _timerRunning = false;
-            //game-over logic here
+            GameManager.Instance.EndRound();
         }
         UpdateTimeRemainingDisplay();
     }

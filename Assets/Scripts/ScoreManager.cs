@@ -15,21 +15,25 @@ public class ScoreManager : MonoBehaviour
         }
         Instance = this;
     }
-    // Start is called before the first frame update
+
+    private int _totalScore = 0;
+    private int _killCount = 0;
+
+    
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // push initial values so the HUD isn't blank before the first kill
+        UIManager.Instance.UpdateScore(_totalScore);
+        UIManager.Instance.UpdateAICount(_killCount);
     }
 
     public void AddScore(float _score)
     {
+        _totalScore += Mathf.RoundToInt(_score);
+        _killCount++; // every scored kill counts as one enemy defeated
 
+        UIManager.Instance.UpdateScore(_totalScore);
+        UIManager.Instance.UpdateAICount(_killCount);
     }
 
 }

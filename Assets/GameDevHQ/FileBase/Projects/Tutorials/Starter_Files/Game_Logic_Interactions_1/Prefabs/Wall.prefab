@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 264972961797156395}
   - component: {fileID: 264972961800580619}
   - component: {fileID: 264972961799580875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 276616641308216922}
   - component: {fileID: 276616641307414138}
   - component: {fileID: 276616641306315962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 303807789753518357}
   - component: {fileID: 303807789756909877}
   - component: {fileID: 303807789755812853}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 397518147256320654}
   - component: {fileID: 397518147252929198}
   - component: {fileID: 397518147254026350}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 654366089401758974}
   - component: {fileID: 654366089403053278}
   - component: {fileID: 654366089404184094}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 657599914453556422}
   - component: {fileID: 657599914454326502}
   - component: {fileID: 657599914455457318}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 1044989871009077685}
   - component: {fileID: 1044989871008307605}
   - component: {fileID: 1044989871007308629}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 1103602547913835564}
   - component: {fileID: 1103602547914605580}
   - component: {fileID: 1103602547915736780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 1110833670109602772}
   - component: {fileID: 1110833670108308468}
   - component: {fileID: 1110833670107177268}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +740,7 @@ GameObject:
   - component: {fileID: 1487592783855542599}
   - component: {fileID: 1487592783854215527}
   - component: {fileID: 1487592783853249447}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 1495149375181542097}
   - component: {fileID: 1495149375182312177}
   - component: {fileID: 1495149375183310897}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   - component: {fileID: 1578309645335773822}
   - component: {fileID: 1578309645338640990}
   - component: {fileID: 1578309645337542814}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 1686316015757878045}
   - component: {fileID: 1686316015760745277}
   - component: {fileID: 1686316015759778301}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1064,7 @@ GameObject:
   - component: {fileID: 1941724223706523421}
   - component: {fileID: 1941724223709390653}
   - component: {fileID: 1941724223708423677}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1145,7 +1145,7 @@ GameObject:
   - component: {fileID: 2120025047592858127}
   - component: {fileID: 2120025047589958191}
   - component: {fileID: 2120025047590957295}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1226,7 @@ GameObject:
   - component: {fileID: 2208486511652842177}
   - component: {fileID: 2208486511655742177}
   - component: {fileID: 2208486511654610977}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   - component: {fileID: 2320489248404303028}
   - component: {fileID: 2320489248407694484}
   - component: {fileID: 2320489248406728276}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,7 +1388,7 @@ GameObject:
   - component: {fileID: 2423705452857003911}
   - component: {fileID: 2423705452854136743}
   - component: {fileID: 2423705452855233895}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,7 +1469,7 @@ GameObject:
   - component: {fileID: 2539542006038937240}
   - component: {fileID: 2539542006038167224}
   - component: {fileID: 2539542006037167224}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1550,7 +1550,7 @@ GameObject:
   - component: {fileID: 2620551564976391448}
   - component: {fileID: 2620551564979815736}
   - component: {fileID: 2620551564978685944}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1631,7 @@ GameObject:
   - component: {fileID: 2851284304747377139}
   - component: {fileID: 2851284304748179923}
   - component: {fileID: 2851284304749146899}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 2876687219956089272}
   - component: {fileID: 2876687219955319192}
   - component: {fileID: 2876687219954189144}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1793,7 +1793,7 @@ GameObject:
   - component: {fileID: 2964039080913055820}
   - component: {fileID: 2964039080910188652}
   - component: {fileID: 2964039080911286956}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1874,7 @@ GameObject:
   - component: {fileID: 3415450958132464196}
   - component: {fileID: 3415450958135855716}
   - component: {fileID: 3415450958134888612}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1955,7 +1955,7 @@ GameObject:
   - component: {fileID: 3964291749040144367}
   - component: {fileID: 3964291749043044303}
   - component: {fileID: 3964291749042044175}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2036,7 +2036,7 @@ GameObject:
   - component: {fileID: 3981471337819823218}
   - component: {fileID: 3981471337818496082}
   - component: {fileID: 3981471337817530002}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2117,7 +2117,7 @@ GameObject:
   - component: {fileID: 4035639499516935692}
   - component: {fileID: 4035639499513511468}
   - component: {fileID: 4035639499514510572}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2198,7 +2198,7 @@ GameObject:
   - component: {fileID: 4082666566378232969}
   - component: {fileID: 4082666566379035817}
   - component: {fileID: 4082666566380133993}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2279,7 +2279,7 @@ GameObject:
   - component: {fileID: 4121845642199258882}
   - component: {fileID: 4121845642202126114}
   - component: {fileID: 4121845642201028066}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2360,7 +2360,7 @@ GameObject:
   - component: {fileID: 4290489719786876740}
   - component: {fileID: 4290489719787679588}
   - component: {fileID: 4290489719788776868}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2441,7 +2441,7 @@ GameObject:
   - component: {fileID: 4321358116710394619}
   - component: {fileID: 4321358116713294555}
   - component: {fileID: 4321358116712294427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2522,7 +2522,7 @@ GameObject:
   - component: {fileID: 4362575971866327316}
   - component: {fileID: 4362575971862935860}
   - component: {fileID: 4362575971863903220}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2603,7 +2603,7 @@ GameObject:
   - component: {fileID: 4652671643010062865}
   - component: {fileID: 4652671643008735793}
   - component: {fileID: 4652671643007637745}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2684,7 +2684,7 @@ GameObject:
   - component: {fileID: 4793255857571853960}
   - component: {fileID: 4793255857571051176}
   - component: {fileID: 4793255857569952872}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2765,7 +2765,7 @@ GameObject:
   - component: {fileID: 4925115885894801891}
   - component: {fileID: 4925115885893507523}
   - component: {fileID: 4925115885892508419}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2846,7 +2846,7 @@ GameObject:
   - component: {fileID: 5016668794376028545}
   - component: {fileID: 5016668794377355681}
   - component: {fileID: 5016668794378453857}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2927,7 +2927,7 @@ GameObject:
   - component: {fileID: 5151523173149774455}
   - component: {fileID: 5151523173153198679}
   - component: {fileID: 5151523173152067735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3008,7 +3008,7 @@ GameObject:
   - component: {fileID: 5155390957826974064}
   - component: {fileID: 5155390957830398288}
   - component: {fileID: 5155390957829268368}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3089,7 +3089,7 @@ GameObject:
   - component: {fileID: 5224976645990907506}
   - component: {fileID: 5224976645987483218}
   - component: {fileID: 5224976645988482194}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3170,7 +3170,7 @@ GameObject:
   - component: {fileID: 5644135388958855888}
   - component: {fileID: 5644135388960183024}
   - component: {fileID: 5644135388961280048}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3251,7 +3251,7 @@ GameObject:
   - component: {fileID: 5650859501026059038}
   - component: {fileID: 5650859501028959038}
   - component: {fileID: 5650859501027959294}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3332,7 +3332,7 @@ GameObject:
   - component: {fileID: 5699754062193682600}
   - component: {fileID: 5699754062192355464}
   - component: {fileID: 5699754062191389256}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3413,7 +3413,7 @@ GameObject:
   - component: {fileID: 5743926652320107178}
   - component: {fileID: 5743926652317207178}
   - component: {fileID: 5743926652318337098}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3494,7 +3494,7 @@ GameObject:
   - component: {fileID: 5744861575608958354}
   - component: {fileID: 5744861575605534130}
   - component: {fileID: 5744861575606665074}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3575,7 +3575,7 @@ GameObject:
   - component: {fileID: 866577473539899703}
   - component: {fileID: 8424990072812620656}
   - component: {fileID: 6274533990917801607}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3656,7 +3656,7 @@ GameObject:
   - component: {fileID: 6051947016089702061}
   - component: {fileID: 6051947016093126285}
   - component: {fileID: 6051947016091995213}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3737,7 +3737,7 @@ GameObject:
   - component: {fileID: 6427428817267018966}
   - component: {fileID: 6427428817269886198}
   - component: {fileID: 6427428817268788790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3818,7 +3818,7 @@ GameObject:
   - component: {fileID: 6427428817576087239}
   - component: {fileID: 6427428817573187303}
   - component: {fileID: 6427428817574186023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3899,7 +3899,7 @@ GameObject:
   - component: {fileID: 6427428817897283205}
   - component: {fileID: 6427428817896480421}
   - component: {fileID: 6427428817895513189}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3978,7 +3978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6427428817964708242}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4079,7 +4079,7 @@ GameObject:
   - component: {fileID: 6427428818451125441}
   - component: {fileID: 6427428818450322657}
   - component: {fileID: 6427428818449225249}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4160,7 +4160,7 @@ GameObject:
   - component: {fileID: 6427428818559542173}
   - component: {fileID: 6427428818560869309}
   - component: {fileID: 6427428818561835389}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4241,7 +4241,7 @@ GameObject:
   - component: {fileID: 6441489071396717153}
   - component: {fileID: 6441489071395947073}
   - component: {fileID: 6441489071394816129}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4322,7 +4322,7 @@ GameObject:
   - component: {fileID: 6509713091768982520}
   - component: {fileID: 6509713091770309592}
   - component: {fileID: 6509713091771275544}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4403,7 +4403,7 @@ GameObject:
   - component: {fileID: 6831977306745598373}
   - component: {fileID: 6831977306746892677}
   - component: {fileID: 6831977306747892549}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4484,7 +4484,7 @@ GameObject:
   - component: {fileID: 6864414162986608126}
   - component: {fileID: 6864414162983740894}
   - component: {fileID: 6864414162984838942}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4565,7 +4565,7 @@ GameObject:
   - component: {fileID: 6939983743279903217}
   - component: {fileID: 6939983743278608849}
   - component: {fileID: 6939983743277478673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4646,7 +4646,7 @@ GameObject:
   - component: {fileID: 7112205521344875016}
   - component: {fileID: 7112205521345645096}
   - component: {fileID: 7112205521346644200}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4727,7 +4727,7 @@ GameObject:
   - component: {fileID: 7236466428484590878}
   - component: {fileID: 7236466428485393726}
   - component: {fileID: 7236466428486361086}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4808,7 +4808,7 @@ GameObject:
   - component: {fileID: 7645812388661336845}
   - component: {fileID: 7645812388658469677}
   - component: {fileID: 7645812388659567085}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4889,7 +4889,7 @@ GameObject:
   - component: {fileID: 8127185239773763400}
   - component: {fileID: 8127185239777154920}
   - component: {fileID: 8127185239776056744}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4970,7 +4970,7 @@ GameObject:
   - component: {fileID: 8249785970573574475}
   - component: {fileID: 8249785970576998763}
   - component: {fileID: 8249785970575999915}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5051,7 +5051,7 @@ GameObject:
   - component: {fileID: 8284513255167143855}
   - component: {fileID: 8284513255170568079}
   - component: {fileID: 8284513255169568079}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5132,7 +5132,7 @@ GameObject:
   - component: {fileID: 8313830527103123230}
   - component: {fileID: 8313830527106023230}
   - component: {fileID: 8313830527104892414}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5213,7 +5213,7 @@ GameObject:
   - component: {fileID: 8710943447965185251}
   - component: {fileID: 8710943447962318019}
   - component: {fileID: 8710943447963284995}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5294,7 +5294,7 @@ GameObject:
   - component: {fileID: 8730136660237106924}
   - component: {fileID: 8730136660240006860}
   - component: {fileID: 8730136660239006732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5375,7 +5375,7 @@ GameObject:
   - component: {fileID: 8739599980798134557}
   - component: {fileID: 8739599980795234621}
   - component: {fileID: 8739599980796234749}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5456,7 +5456,7 @@ GameObject:
   - component: {fileID: 9010840692725060906}
   - component: {fileID: 9010840692728485130}
   - component: {fileID: 9010840692727355338}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5537,7 +5537,7 @@ GameObject:
   - component: {fileID: 9110594003235045825}
   - component: {fileID: 9110594003234275809}
   - component: {fileID: 9110594003233145633}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Wall_04 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5618,7 +5618,7 @@ GameObject:
   - component: {fileID: 9176872128456451248}
   - component: {fileID: 9176872128457221264}
   - component: {fileID: 9176872128458352208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Scifi_Column_04 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
