@@ -8,11 +8,12 @@ public class Player : MonoBehaviour
     // AI is handled separately below since hitting it triggers gameplay logic (Death, scoring, Explosion), not just a sound.
     [SerializeField] private LayerMask _layerAI;
     [SerializeField] private LayerMask _layerExplosive;
+    [SerializeField] private LayerMask _layerBarrier; // barriers have health/damage/recharge logic now, not just a sound
 
     [Header("Ammo")]
     [SerializeField] private int _maxAmmo = 50;
     private int _currentAmmo;
-    //Everything else (Barrier, Wall, and any future surface type) is just a layer + a sound
+    //Everything else (Wall and any future surface type) is just a layer + a sound
     //Add new entries here in the Inspector -- no code changes needed to support a new layer
 
     [System.Serializable]
@@ -71,7 +72,7 @@ public class Player : MonoBehaviour
 
     private LayerMask GetCombinedMask()
     {
-        LayerMask _combined = _layerAI | _layerExplosive;
+        LayerMask _combined = _layerAI | _layerExplosive | _layerBarrier;
         foreach (LayerImpactSound _entry in _impactSounds)
         {
             _combined |= _entry.layer;
@@ -99,6 +100,14 @@ public class Player : MonoBehaviour
             ExplosiveBarrel _barrel = _hitInfo.collider.GetComponent<ExplosiveBarrel>();
             if (_barrel != null) _barrel.Explode();
             Debug.Log("You hit the barrel!");
+            return;
+        }
+        
+        if (IsInLayerMask(_hitLayer, _layerBarrier))
+        {
+            Barrier _barrierComp = _hitInfo.collider.GetComponent<Barrier>();
+            if (_barrierComp != null) _barrierComp.TakeDamage(1);
+            Debug.Log("You hit the barrier!");
             return;
         }
 

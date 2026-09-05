@@ -173,6 +173,9 @@ public class AI : MonoBehaviour
         float _distanceToEnd = GetPathDistance(transform.position, _endPoint.position);
         foreach (Transform _barrier in _barriers)
         {
+            Barrier _barrierComp = _barrier.GetComponent<Barrier>();
+            if (_barrierComp != null && !_barrierComp.IsUsable) continue; // skip destroyed/recharging barriers
+
             float _barrierDistanceToEnd = GetPathDistance(_barrier.position, _endPoint.position);
             if (_barrierDistanceToEnd < _distanceToEnd && !_occupiedBarriers.Contains(_barrier))
                 _ahead.Add(_barrier);

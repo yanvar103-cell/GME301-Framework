@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 8997754025429301547}
   - component: {fileID: 158048464015259788}
   - component: {fileID: 2883096531419780287}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 9105943578911978949}
   - component: {fileID: 49890134911169634}
   - component: {fileID: 3063133740997679185}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +944,7 @@ GameObject:
   - component: {fileID: 8929908077507943598}
   - component: {fileID: 361019926034619657}
   - component: {fileID: 3400719703614861626}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1039,7 +1039,7 @@ GameObject:
   - component: {fileID: 6341831141125983048}
   - component: {fileID: 8713229165869190709}
   - component: {fileID: 3698959443750034541}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 6428184960589908698}
   - component: {fileID: 4636909137507103334}
   - component: {fileID: 8763528908157285487}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,7 +1229,7 @@ GameObject:
   - component: {fileID: 7583959254427999826}
   - component: {fileID: 1715963138732892149}
   - component: {fileID: 4459410644438201286}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1486,7 +1486,7 @@ GameObject:
   - component: {fileID: 6088659608281078734}
   - component: {fileID: 2182915831838397868}
   - component: {fileID: 360790556364792028}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1986,7 +1986,7 @@ GameObject:
   - component: {fileID: 2040848383831896326}
   - component: {fileID: 9021654990872414396}
   - component: {fileID: 5848042349208506986}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2613,7 +2613,7 @@ GameObject:
   - component: {fileID: 3423014931761710052}
   - component: {fileID: 5867922383538668099}
   - component: {fileID: 8889082473345052272}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2789,7 +2789,7 @@ GameObject:
   - component: {fileID: 2723195911260643972}
   - component: {fileID: 1959892312242679395}
   - component: {fileID: 9072197126355357314}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Force Barrier (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

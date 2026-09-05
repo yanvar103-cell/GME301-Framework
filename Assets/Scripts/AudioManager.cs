@@ -24,8 +24,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip _backgroundMusic;
     [SerializeField] private AudioClip _weaponFireClip;
     [SerializeField] private AudioClip _aiDeathClip;
-    [SerializeField] private AudioClip _barrierHitClip;
-    [SerializeField] private AudioClip _wallHitClip;
     [SerializeField] private AudioClip _aiCompletedTrackClip;
 
     private void Start()

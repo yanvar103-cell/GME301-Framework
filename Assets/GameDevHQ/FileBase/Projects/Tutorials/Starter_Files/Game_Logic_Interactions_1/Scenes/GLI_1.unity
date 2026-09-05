@@ -24226,7 +24226,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:25:00
+  m_text: 00:00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33767,13 +33767,11 @@ MonoBehaviour:
   _layerExplosive:
     serializedVersion: 2
     m_Bits: 256
+  _layerBarrier:
+    serializedVersion: 2
+    m_Bits: 64
   _maxAmmo: 50
   _impactSounds:
-  - label: Barrier
-    layer:
-      serializedVersion: 2
-      m_Bits: 64
-    impactSound: {fileID: 8300000, guid: ebb102617b33985469301178ea8a8ea5, type: 3}
   - label: Wall
     layer:
       serializedVersion: 2
@@ -37076,8 +37074,6 @@ MonoBehaviour:
   _backgroundMusic: {fileID: 8300000, guid: c03b20667c2ef3a4faddae34df543310, type: 3}
   _weaponFireClip: {fileID: 8300000, guid: 824ab8823dac9654584ef769acd4fcf9, type: 3}
   _aiDeathClip: {fileID: 8300000, guid: 480fdb062e9f7a744a6be33e29db20ba, type: 3}
-  _barrierHitClip: {fileID: 8300000, guid: ebb102617b33985469301178ea8a8ea5, type: 3}
-  _wallHitClip: {fileID: 8300000, guid: c705e729f336630458b76715fdeb9d54, type: 3}
   _aiCompletedTrackClip: {fileID: 8300000, guid: 320922404913aa2498c545b82c2839c0, type: 3}
 --- !u!4 &1696351246
 Transform:
