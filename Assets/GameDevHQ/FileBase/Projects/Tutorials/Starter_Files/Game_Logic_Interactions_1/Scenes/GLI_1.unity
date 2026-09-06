@@ -33734,6 +33734,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3502090026857989376, guid: 964413c647e7ca441b457d50316abc87, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502090026857989378, guid: 964413c647e7ca441b457d50316abc87, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502090026857989382, guid: 964413c647e7ca441b457d50316abc87, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502090027590340550, guid: 964413c647e7ca441b457d50316abc87, type: 3}
+      propertyPath: m_CameraType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3502730398207109303, guid: 964413c647e7ca441b457d50316abc87, type: 3}
       propertyPath: m_TagString
       value: MainCamera
@@ -33744,7 +33760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3518291814107247131, guid: 964413c647e7ca441b457d50316abc87, type: 3}
       propertyPath: field of view
-      value: 53
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3518291814107247131, guid: 964413c647e7ca441b457d50316abc87, type: 3}
       propertyPath: m_FocalLength
