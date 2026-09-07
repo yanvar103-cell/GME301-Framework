@@ -23,6 +23,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _timeValueText;
     [SerializeField] private TextMeshProUGUI _ammoValueText;
 
+    [Header("Instructions")]
+    [SerializeField] private TextMeshProUGUI _instructionsText;
+    [SerializeField] private float _winConditionDisplayDuration = 5f;
+
     [Header("Timer Settings")]
     [SerializeField] private float _matchDuration = 30f; //seconds, adjust to round length
     private float _timeRemaining;
@@ -33,6 +37,8 @@ public class UIManager : MonoBehaviour
         _timeRemaining = _matchDuration;
         UpdateTimeRemainingDisplay();
         _timerRunning = true; // set false here and call StartTimer() elsewhere if you want manual control
+
+        ShowStartInstructions();
     }
 
     private void Update()
@@ -85,5 +91,38 @@ public class UIManager : MonoBehaviour
         int _minutes = Mathf.FloorToInt(_timeRemaining / 60f);
         int _seconds = Mathf.FloorToInt(_timeRemaining % 60f);
         _timeValueText.text = $"{_minutes:00}:{_seconds:00}";
+    }
+
+    private void ShowStartInstructions()
+    {
+        if (_instructionsText == null) return;
+
+        _instructionsText.text = $"Kill at least {GameManager.Instance.GetWinThresholdPercent()} of enemies before time runs out to win!";
+        _instructionsText.gameObject.SetActive(true);
+        StartCoroutine(HideInstructionsAfterDelay(_winConditionDisplayDuration));
+    }
+
+    private IEnumerator HideInstructionsAfterDelay(float _delay)
+    {
+        yield return new WaitForSeconds(_delay);
+        _instructionsText.gameObject.SetActive(false);
+    }
+
+    // called by Player.cs whenever ammo hits 0
+    public void ShowReloadPrompt()
+    {
+        if (_instructionsText == null) return;
+
+        StopAllCoroutines(); // cancel any pending start-instructions hide, so it can't override this
+        _instructionsText.text = "Press R to Reload";
+        _instructionsText.gameObject.SetActive(true);
+    }
+
+    // called by Player.cs once reload finishes
+    public void HideReloadPrompt()
+    {
+        if (_instructionsText == null) return;
+
+        _instructionsText.gameObject.SetActive(false);
     }
 }

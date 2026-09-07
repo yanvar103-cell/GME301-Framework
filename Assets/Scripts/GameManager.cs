@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
     [Header("Round Settings")]
     [SerializeField, Range(0f, 100f)] private float _winThresholdPercent = 75f;//show it with slider
 
+    public float GetWinThresholdPercent()
+    {
+        return _winThresholdPercent;
+    }
+
     [Header("Game Over UI")]
     [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private TextMeshProUGUI _resultTitleText;   //"You Win!" / "You Lose!"

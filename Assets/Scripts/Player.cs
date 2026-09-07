@@ -9,10 +9,13 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask _layerAI;
     [SerializeField] private LayerMask _layerExplosive;
     [SerializeField] private LayerMask _layerBarrier; // barriers have health/damage/recharge logic now, not just a sound
+    private InputActions _input;
 
     [Header("Ammo")]
     [SerializeField] private int _maxAmmo = 50;
     private int _currentAmmo;
+    [SerializeField] private float _reloadDuration = 2f;
+    private bool _isReloading = false;
     //Everything else (Wall and any future surface type) is just a layer + a sound
     //Add new entries here in the Inspector -- no code changes needed to support a new layer
 
@@ -29,10 +32,34 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        _input = new InputActions();
+        _input.Player.Enable();
+        _input.Player.Reload.performed += Reload_performed;
         Cursor.visible = false;//just hides the pointer graphic
         //Cursor.lockState = CursorLockMode.Locked;//cursor is hidden, snapped to the center of the screen
         _currentAmmo = _maxAmmo;
         UIManager.Instance.UpdateAmmo(_currentAmmo);
+    }
+
+    private void Reload_performed(InputAction.CallbackContext context)
+    {
+        if (_currentAmmo <= 0 && !_isReloading)
+        {
+            StartCoroutine(ReloadRoutine());
+        }
+    }
+
+    IEnumerator ReloadRoutine()
+    {
+        _isReloading = true;
+        AudioManager.Instance.PlayReloadWeapon();
+
+        yield return new WaitForSeconds(_reloadDuration);
+
+        _currentAmmo = _maxAmmo;
+        UIManager.Instance.UpdateAmmo(_currentAmmo);
+        UIManager.Instance.HideReloadPrompt();
+        _isReloading = false;
     }
 
     void Update()
@@ -47,9 +74,17 @@ public class Player : MonoBehaviour
 
     private void Shoot()
     {
+        if (_isReloading)
+        {
+            Debug.Log("Reloading...");
+            return;
+        }
         if (_currentAmmo <= 0)
         {
-            Debug.Log("Out of ammo!");
+            Debug.Log("Out of ammo, press R to reload!");
+            AudioManager.Instance.PlayEmptyWeapon();
+            UIManager.Instance.ShowReloadPrompt();
+            
             return;
         }
         if (Camera.main == null)

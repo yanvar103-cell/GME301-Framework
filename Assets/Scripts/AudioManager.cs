@@ -23,6 +23,8 @@ public class AudioManager : MonoBehaviour
     [Header("Clips")]
     [SerializeField] private AudioClip _backgroundMusic;
     [SerializeField] private AudioClip _weaponFireClip;
+    [SerializeField] private AudioClip _reloadWeapon;
+    [SerializeField] private AudioClip _emptyWeapon;
     [SerializeField] private AudioClip _aiDeathClip;
     [SerializeField] private AudioClip _aiCompletedTrackClip;
 
@@ -46,6 +48,8 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayWeaponFire() => PlaySFX(_weaponFireClip);
+    public void PlayReloadWeapon() => PlaySFX(_reloadWeapon);
+    public void PlayEmptyWeapon() => PlaySFX(_emptyWeapon);
     public void PlayAIDeath() => PlaySFX(_aiDeathClip);
     public void PlayAICompletedTrack() => PlaySFX(_aiCompletedTrackClip);
     
