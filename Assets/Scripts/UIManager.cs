@@ -97,7 +97,7 @@ public class UIManager : MonoBehaviour
     {
         if (_instructionsText == null) return;
 
-        _instructionsText.text = $"Kill at least {GameManager.Instance.GetWinThresholdPercent()} of enemies before time runs out to win!";
+        _instructionsText.text = $"Kill at least {GameManager.Instance.GetWinThresholdPercent()}% of enemies before time runs out to win!";
         _instructionsText.gameObject.SetActive(true);
         StartCoroutine(HideInstructionsAfterDelay(_winConditionDisplayDuration));
     }
